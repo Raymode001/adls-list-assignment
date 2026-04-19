@@ -10,7 +10,7 @@ def main():
     # Define the container name
     container_name = "azurepublicdataset"
 
-    # List all blobs in the container
+    # List all blobs with .csv.gz ending in the container
     container_client = blob_service_client.get_container_client(container_name)
 
     print(f"Listing files in {container_name} container with .csv.gz ending")
