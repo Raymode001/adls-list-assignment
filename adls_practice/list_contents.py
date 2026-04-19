@@ -13,7 +13,7 @@ def main():
     # List all blobs in the container
     container_client = blob_service_client.get_container_client(container_name)
 
-    print(f"Listing files in container with .csv.gz ending: {container_name}")
+    print(f"Listing files in {container_name} container with .csv.gz ending")
     for blob in container_client.list_blobs():
         if blob.name.endswith('.csv.gz'):
             print(blob.name)
