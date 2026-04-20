@@ -11,6 +11,7 @@ A Python script that connects to a public Azure Blob Storage container and lists
 │       └── adls_list.yml
 ├── adls_practice/
 │   ├── list_contents.py
+│   ├── unit_test.py
 │   └── requirements.txt
 └── README.md
 ```
@@ -26,6 +27,14 @@ A Python script that connects to a public Azure Blob Storage container and lists
    ```bash
    python adls_practice/list_contents.py
    ```
+
+## Running Unit Tests
+
+```bash
+python -m pytest adls_practice/unit_test.py
+```
+
+The test mocks the Azure connection and verifies that the script prints all `.csv.gz` files while excluding non-matching files.
 
 ## Running via GitHub Actions
 
