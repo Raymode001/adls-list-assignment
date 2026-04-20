@@ -1,2 +1,3 @@
 azure-storage-blob==12.16.0
 six
+pytest
